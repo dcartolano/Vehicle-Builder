@@ -16,7 +16,6 @@ class Cli {
   exit: boolean = false;
 
   // TODO: Update the constructor to accept Truck and Motorbike objects as well
-  // constructor(vehicles: (Car)[] | (Truck)[] | (Motorbike)[]) {
   constructor(vehicles: (Car | Truck | Motorbike)[]) {
     this.vehicles = vehicles;
   }
@@ -281,9 +280,9 @@ class Cli {
 
   // method to find a vehicle to tow
   // TODO: add a parameter to accept a truck object
-  // findVehicleToTow(truck: Car | Truck | Motorbike): void {
-  findVehicleToTow(): void {
-    console.log('this logs right before inquirer is called');
+   findVehicleToTow(truck: Car | Truck | Motorbike): void  {
+  // async findVehicleToTow(truck: Car | Truck | Motorbike): Promise<void>  {
+    // console.log('this logs right before inquirer is called');
     inquirer
       .prompt([
         {
@@ -291,6 +290,7 @@ class Cli {
           name: 'vehicleToTow',
           message: 'Select a vehicle to tow',
           choices: this.vehicles.map((vehicle) => {
+          // choices: await this.vehicles.map((vehicle) => {
             return {
               name: `${vehicle.vin} -- ${vehicle.make} ${vehicle.model}`,
               value: vehicle,
@@ -299,8 +299,8 @@ class Cli {
         },
       ])
       .then((answers) => {
+        // console.log(answers);
         // TODO: check if the selected vehicle is the truck
-        console.log('truck');
         // TODO: if it is, log that the truck cannot tow itself then perform actions on the truck to allow the user to select another action
         // TODO: if it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
       });
@@ -394,12 +394,9 @@ class Cli {
         // find the selected vehicle
         for (let i = 0; i < this.vehicles.length; i++) {
           if (this.vehicles[i].vin === this.selectedVehicleVin) {
-            console.log(`this logs right before findVehicleToTow is called`);
-            // this.findVehicleToTow(this.vehicles[i]);
-            this.findVehicleToTow;
-            console.log(this);
-            console.log(this.vehicles[i]);
-            if (this.vehicles[i].towingCapacity )
+            // console.log(`this logs right before findVehicleToTow is called`);
+            this.findVehicleToTow(this.vehicles[i]);
+
           }
         }
         // TODO: add statements to perform the wheelie action only if the selected vehicle is a motorbike
