@@ -28,7 +28,7 @@ Perform a git clone of the repo into a local folder, then open in VS Code or sim
 
 Open the integrated terminal from the package.json file, and use "npm run start" to start the app. From there, navigate through the options and features as desired. 
 
-For more details, check out this ![demo video](#link) showing the app in action.
+For more details, check out this [demo video](https://drive.google.com/file/d/1GmMVw3aX07xz0ruoOtGfn4PhtOsqKvE0/view) showing the app in action.
 
 Provide instructions and examples for use. Include screenshots as needed.
 
