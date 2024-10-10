@@ -2,13 +2,6 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
 This app aims to create a UI in the terminal through which a user can enter vehicles with select data, and perform a few actions for a vehicle of their choosing, sometimes based on the information entered. 
 
 This project was primarily focused on getting more practice with object oriented programming, and learning more about how to use assocciated classes, methods, and relationships.
