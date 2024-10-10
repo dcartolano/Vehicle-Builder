@@ -23,8 +23,6 @@ Open the integrated terminal from the package.json file, and use "npm run start"
 
 For more details, check out this [demo video](https://drive.google.com/file/d/1GmMVw3aX07xz0ruoOtGfn4PhtOsqKvE0/view) showing the app in action.
 
-Provide instructions and examples for use. Include screenshots as needed.
-
 ## Credits
 
 Thanks to EdX and Northwestern for the starter code and the opportunity to practice these skills. 
